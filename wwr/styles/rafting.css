@@ -26,9 +26,12 @@
   
   p {
     line-height: 1.6;
-    color: var(--footer-font-color);
+    color: var(--footer-font-color #ffffff);
   }
-  
+  section.p1{
+    line-height: 1.6;
+    color: var(--font-color)
+  }
   a {
     color: var(--secondary-color);
     text-decoration: none;
