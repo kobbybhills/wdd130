@@ -50,6 +50,17 @@ p {
   color: var(--font-color);
 }
 
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: #3b6161;
+  color: white;
+}
+
 /* Header Styles */
 .header {
   display: grid;
@@ -62,11 +73,11 @@ p {
 
 .header-content {
   display: grid;
-  grid-template-columns: auto 2fr 1fr;
+  grid-template-columns: auto 1fr;
   align-items: center;
   width: 100%;
-  gap: 11px;
 }
+
 
 .logo {
   height: 50px;
@@ -88,16 +99,20 @@ p {
   margin: 0;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-left: 759px;
+}
+
 nav a {
-  color: var(--secondary-color);;
   font-weight: 700;
   padding: 5px 15px;
   background: var(--high-contrast-color);
   border-radius: 5px;
   font-size: 1rem;
   text-transform: uppercase;
-  text-decoration: none;
-  transition: 0.20s;
 }
 
 .nav a:hover {
@@ -257,7 +272,11 @@ footer {
   color: var(--footer-font-color);
   padding: 20px;
 }
-
+footer nav.sociallinks {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
 
 p.paragraph{
   color: aliceblue;
@@ -276,11 +295,7 @@ p.paragraph{
 }
 
 
-footer nav.sociallinks {
-  display: flex;
-  justify-content: flex-end;
-  gap: 5px;
-}
+
 
 footer nav.sociallinks img {
   width: 22px;
